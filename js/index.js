@@ -21,9 +21,11 @@ let degCount = 0;
 function changeColorButton() {
     const glbSquare = document.querySelector('.glbSquare');
     const glbChild = glbSquare.children;
-    if (glbChild.length) {
+    if (glbChild.length > 0) {
         for (let i = 0; i < glbChild.length; i++) {
-            glbChild[i].style.backgroundColor = arrayColor[i].color;
+            if (glbChild[i]) {
+                glbChild[i].style.backgroundColor = arrayColor[i].color;
+            }
         }
     }
 }
