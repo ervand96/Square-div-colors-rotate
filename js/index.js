@@ -22,7 +22,7 @@ function changeColorButton() {
     const glbSquare = document.querySelector('.glbSquare');
     const glbChild = glbSquare.children;
     if (glbChild.length) {
-        for (let i = 0; i < glbSquare.children.length; i++) {
+        for (let i = 0; i < glbChild.length; i++) {
             glbChild[i].style.backgroundColor = arrayColor[i].color;
         }
     }
