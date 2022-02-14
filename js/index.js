@@ -23,7 +23,7 @@ function changeColorButton() {
     const glbChild = glbSquare.children;
     if (glbChild.length) {
         for (let i = 0; i < glbSquare.children.length; i++) {
-            glbSquare.children[i].style.backgroundColor = arrayColor[i].color;
+            glbChild[i].style.backgroundColor = arrayColor[i].color;
         }
     }
 }
